@@ -20,7 +20,7 @@
     <title>Document</title>
 </head>
 
-<body onload="RickToast();progress();">
+<body onload="whenLoad();">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -168,6 +168,10 @@
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     let roll = 0;
     let rickPoint = 0;
+    function whenLoad(){
+        RickToast();
+        progress();
+    }
     function RickToast() {
         let x = Math.random() * 100;
         x = x.toFixed(0);
@@ -206,7 +210,7 @@
             if (rickPoint.toFixed(0) == 50 || roll > 0) {
                 $('.alert').css('color', '#fe1616');
             }
-            if (roll == 0 && rickPoint.toFixed(0) =< 50) {
+            if (roll == 0 && rickPoint.toFixed(0) <= 50) {
                 $('.alert').css('display', 'none');
             }
             if (roll == 1 && rickPoint >= 50) {
