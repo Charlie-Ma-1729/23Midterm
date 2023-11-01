@@ -17,7 +17,6 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/299aecfe82.js" crossorigin="anonymous"></script>
-    <!-- <script src="/scripts.js"></script> -->
     <title>小小沖繩行</title>
 </head>
 
@@ -137,7 +136,7 @@
         data-original-class="toast-container p-3">
         <div class="toast alert" style="width: fit-content;background: none;">
             <button style="border: none;background: none;" data-bs-toggle="modal" data-bs-target="#Rickpoint"><i
-                    class="fa-solid fa-circle-exclamation fa-shake" style="font-size: 60px;color: #ffe600;"
+                    class="fa-solid fa-circle-exclamation fa-shake" style="font-size: 60px;color: rgb(255, 230, 0);"
                     data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
                     data-bs-title="瑞克計量上升中"></i></button>
         </div>
@@ -166,10 +165,6 @@
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     let roll = 0;
     let rickPoint = 0;
-    if (sessionStorage.getItem("roll")) {
-        roll = sessionStorage.getItem("roll");
-        rickPoint = sessionStorage.getItem("rickPoint");
-    }
 
     function whenLoad() {
         RickToast();
@@ -178,7 +173,6 @@
     function RickToast() {
         let x = Math.random() * 100;
         x = x.toFixed(0);
-        console.log(x);
         if (x <= 3) {
             $('.theroll').css('display', 'block');
             $('.toastRoll').get(0).play();
@@ -196,7 +190,7 @@
                 rickPoint += ((100 / 18650) * roll);
             }
             if (rickPoint >= 100) {
-                window.close();
+                window.location.replace("/pages/roll.html");
             }
             $('.progress-bar').css('width', rickPoint + '%');
             $('.progress-bar').attr('aria-valuenow', rickPoint);
@@ -225,9 +219,6 @@
                     roll++;
                 }
             }
-            sessionStorage.setItem("roll", roll);
-            sessionStorage.setItem("rickPoint", rickPoint);
-            console.log('go');
             progress();
         }, 10)
     }

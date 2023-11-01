@@ -21,7 +21,7 @@
     <title>美食-小小沖繩行</title>
 </head>
 
-<body>
+<body onload="whenLoad();">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">小小沖繩行</a>
@@ -49,17 +49,17 @@
             <h1 class="col-12" style="display: flex;justify-content: center;font-size: 64px;">伴手禮</h1>
         </div>
         <div class="row">
-            <div class="col-7">
-                <h2>第一個景點</h2>
-                <p>第一個景點的介紹介紹</p>
+            <div class="col-7" style="padding: 2%;">
+                <h2>御果子御殿</h2>
+                <p>作為沖繩代表性的伴手禮店家，早在1979年6月就已創業，不過直到2015年2月12才更名為御果子御殿，除了位於讀谷的總店以外還有三間分店，分別位於名護、恩納和國際通，作為點心大廠，除了生產沖繩的特產──金楚糕以外，最有名的就是它的紅芋塔，它有名到什麼程度呢，紅玉塔每天是限量供應的，一旦售完就必須等到明天才行，所以你經常會看見一個畫面，就是在擺放著紅芋塔的位置空空如也，而其他的點心卻是依舊有著庫存，為此我還聽說過有人為了買到紅芋塔特地早起等它九點開店就進去買，而我總共去過位於名護和國際通的兩間店，和在讀谷的總部一樣，名護的那間店附有生產線，所以可以體驗手作DIY，你也可以透過玻璃櫥窗來觀察它的生產過程。</p>
             </div>
             <img src="/imgs/banner01.jpg" alt="" class="col-5">
         </div>
         <div class="row">
             <img src="/imgs/banner01.jpg" alt="" class="col-5">
-            <div class="col-7">
-                <h2>第二個景點</h2>
-                <p>第二個景點的介紹介紹</p>
+            <div class="col-7" style="padding: 2%;display: flex; align-items: center;">
+                <p>在某天逛著國際通的夜晚，出於好奇心便進入了御果子御殿，僥倖發現所剩無幾的紅芋塔，出於好奇和白天在名護的店家裡沒買到的報復心態，便購買來打算嚐嚐看它是否真如傳言中的一樣，而在品嘗過後，它確實沒有辜負我的期望和誇大，就真如傳言中的一樣美味，冰冰涼涼的紅芋帶有它獨特的甜和下方酥脆的塔搭在一起，只能說只吃到一個著實遺憾，而因為沒買到盒裝而無法帶回來更是遺憾。
+                </p>
             </div>
 
         </div>
@@ -67,75 +67,6 @@
 
 
 
-
-    <!-- 快停止瑞克搖 -->
-    <div class="modal fade" id="mdroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1><i class="fa-solid fa-triangle-exclamation fa-beat" style="color: #ff0000;"></i>快停止瑞克搖<i
-                            class="fa-solid fa-arrow-trend-down"></i></h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" style="padding:0;">
-                    <video class="modalroll" style="display: flex;justify-content: center; width: 100%">
-                        <source src="vids/RickRoll.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- 瑞克劑量 -->
-    <div class="modal fade" id="Rickpoint" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>瑞克計量</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="rickPoint">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">0%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- 瑞克劑量上升中 -->
-    <div class="toast-container p-3 top-50 end-0 translate-middle-y" id="toastPlacement"
-        data-original-class="toast-container p-3">
-        <div class="toast alert" style="width: fit-content;background: none;">
-            <button style="border: none;background: none;" data-bs-toggle="modal" data-bs-target="#Rickpoint"><i
-                    class="fa-solid fa-circle-exclamation fa-shake" style="font-size: 60px;color: #ffe600;"
-                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
-                    data-bs-title="瑞克計量上升中"></i></button>
-        </div>
-    </div>
-
-
-    <!-- 右下角瑞克搖 -->
-    <div class="toast-container p-3 bottom-0 end-0" id="toastPlacement" data-original-class="toast-container p-3">
-        <div class="toast theroll" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <strong class="me-auto">RickRoll</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"
-                    onclick="StopToast();"></button>
-            </div>
-            <div class="toast-body">
-                <video class="toastRoll" width="320" height="120">
-                    <source src="vids/RickRoll.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>

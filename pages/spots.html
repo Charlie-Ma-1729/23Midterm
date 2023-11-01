@@ -17,11 +17,10 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/299aecfe82.js" crossorigin="anonymous"></script>
-    <!-- <script src="/scripts.js"></script> -->
     <title>景點-小小沖繩行</title>
 </head>
 
-<body>
+<body onload="whenLoad();">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">小小沖繩行</a>
@@ -49,190 +48,83 @@
             <h1 class="col-12" style="display: flex;justify-content: center;font-size: 64px;">景點</h1>
         </div>
         <div class="row">
-            <div class="col-7">
-                <h2>第一個景點</h2>
-                <p>第一個景點的介紹介紹</p>
+            <div class="col-7" style="padding: 2%;">
+                <h2>美ら海水族館</h2>
+                <br>
+
+                <p>世界上最大水族館之一 擁有世界第二大水槽</p>
+
+                <p>入場票價 六歲以下免費入場 中小學生710日幣 高中生1440日幣 成人2180日幣</p>
+
+                <p>館內共有三層展示區，一樓為深海區</p>
+
             </div>
             <img src="/imgs/spot01.jpg" alt="" class="col-5">
         </div>
         <div class="row">
             <img src="/imgs/spot02.jpg" alt="" class="col-5">
-            <div class="col-7">
-                <h2>第二個景點</h2>
-                <p>第二個景點的介紹介紹</p>
+            <div class="col-7" style="padding: 2%;display: flex; align-items: center;">
+                <p>館內共有三層展示區，一樓為深海區，擁有超過200公尺的深海生物，將沖繩周邊的深海再現於此，更是飼育著只能在此見到，平時生活在水深300公尺以下，難以飼育的絲尾紅鑽魚、日本脊龍蝦和鋸鯊等珍稀生物。二樓則為世界上第二大的水槽──黑潮之海，擁有7500噸的水量，最著名的就是第一尾成功長期飼育的鯨鯊，除了代表著吉祥物的鯨鯊，也有其他多種鯊魚和洄游魚，以及鬼蝠魟，而在巨大的櫥窗面前，看著大量的魚群和巨型的鯊魚徐徐游過，那畫面簡直是震撼無比！
+                </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-7">
-                <h2>第一個景點</h2>
-                <p>第一個景點的介紹介紹</p>
+            <div class="col-7" style="padding: 2%;display: flex; align-items: center;flex-direction: column;;">
+                <p>三樓是大量的珊瑚礁和熱帶生物，因為沒有屋頂的設計，在陽光照射下，各式各樣的珊瑚礁和沙地再加上五彩斑斕的熱帶魚，幾乎可以說是重現了沖繩熱帶海灘的風光，而在一旁，除了有個別珊瑚礁的水槽以外，有著一些與珊瑚礁同時存在的海中危險生物，就像是幾乎分布於全域的波布水母，嚴重的甚至會丟了小命。
+                </p>
+                <p>除了水族館以外，也有著海龜館，海牛館，熱帶生物園區以及海豚館等地方，而海豚館更是一大賣點，只要在特定時間造訪，就能夠欣賞到由專業訓練師所訓練出的海豚雜耍表演，看著一眾海豚一齊躍起並落水，時不時也會上岸和觀眾賣萌，結束時還會和觀眾道別，著實會令人想要再次拜訪。
+                </p>
             </div>
             <img src="/imgs/spot03.jpg" alt="" class="col-5">
         </div>
-    </div>
+        <hr style="margin: 8% auto;">
+        <div class="row">
+            <div class="col-7" style="padding: 2%;">
+                <h2>首里城</h2>
+                <br>
 
+                <p>曾經的琉球國都城和王宮 五百多年的世界遺產
+                </p>
 
+                <p>搭乘電車到首里站再徒步一段時間即可抵達</p>
 
-
-    <!-- 快停止瑞克搖 -->
-    <div class="modal fade" id="mdroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1><i class="fa-solid fa-triangle-exclamation fa-beat" style="color: #ff0000;"></i>快停止瑞克搖<i
-                            class="fa-solid fa-arrow-trend-down"></i></h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" style="padding:0;">
-                    <video class="modalroll" style="display: flex;justify-content: center; width: 100%">
-                        <source src="vids/RickRoll.mp4" type="video/mp4">
-                    </video>
-                </div>
             </div>
+            <img src="/imgs/spot01.jpg" alt="" class="col-5">
+        </div>
+        <div class="row">
+            <img src="/imgs/spot02.jpg" alt="" class="col-5">
+            <div class="col-7" style="padding: 2%;display: flex; align-items: center;">
+                <p>若是想要欣賞琉球南部那霸市一帶的景色，是個相當不錯的選擇，搭乘電車的途中，由於是高架電車，能夠將城市的風光盡收眼底，在即將步入首里城之前，一旁的沖繩縣立藝術大學也是一道獨特的風景，古色古香的建築風格，讓人難以認為這是一所大學，在進入首里城之前，氣氛便已經醞釀到位，正門的入口處並無任何顯眼的其他建築，有的只有一座古樸又崴峨的城門，而在來到這之前，還得先爬上一段坡道，可見這座琉球式城堡的周邊保存的可謂是相當完善，在進入正門之後，便是無窮無盡的階梯，由於保存完善，爬起來可謂是相當費力，內部路徑雖然說不上錯綜複雜，但也並不是簡單明瞭，而在到達一半時，會發現一個稍作休息的區域和售票口。
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7" style="padding: 2%;display: flex; align-items: center;flex-direction: column;;">
+                <p>沒錯，正殿以外是免費參觀的，從正殿開始才需要收費，既然來都來了，就不訪進去瞧一瞧吧。令人出乎意料的，正殿不像是其他地方一樣的保存良好，在2019年的10月31日一場大火將包含正殿在內的七處建築給燒毀，我去拜訪時已是災後模樣，不過當地早已開始復原行動，印象中是計畫在大約幾十年後完全復原，雖然無法見到原貌，但也見到了一些遺跡，而在正殿之後，還有一小段路可往上爬，到底之後，便是首里城最高之處，由於日本有建築物限高規範，古老的首里城便是附近最高了，從最高點向四周望去，是一望無際的風景，天氣好時似乎甚至可以看到海邊，而在當下欣賞著風景時，心中有著一種無法言說的舒服。
+                </p>
+            </div>
+            <img src="/imgs/spot03.jpg" alt="" class="col-5">
+        </div>
 
+        <hr style="margin: 8% auto;">
+        <div class="row">
+            <div class="col-7" style="padding: 2%;">
+                <h2>國際通</h2>
+                <br>
+
+                <p>國際通可以說是那霸市最繁華的一段路，它的兩側商店林立，幾乎感覺不到那是一段路，而是一段超長的商店街，不需要踏入它，從它的周邊開始你就能感受到它所帶來的氣氛和人潮了，不知道是否是因為它的繁華所致，它的交通極其便利，在頭和尾各有一個電車站，旁邊還緊鄰著縣市政府，一般到了深夜，其他地方都是人流稀少，燈光昏暗，相當安靜，而這裡就像是歌舞伎町一樣，絲毫不減其活力，甚至可能比白天都要精采，有趣的是，不知道是不是因為這裡是觀光重地的原因，能夠在一些藥妝店裡發現會說中文的店員。
+                </p>
+            </div>
+            <img src="/imgs/spot01.jpg" alt="" class="col-5">
         </div>
     </div>
 
-    <!-- 瑞克劑量 -->
-    <div class="modal fade" id="Rickpoint" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>瑞克計量</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="rickPoint">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">0%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- 瑞克劑量上升中 -->
-    <div class="toast-container p-3 top-50 end-0 translate-middle-y" id="toastPlacement"
-        data-original-class="toast-container p-3">
-        <div class="toast alert" style="width: fit-content;background: none;">
-            <button style="border: none;background: none;" data-bs-toggle="modal" data-bs-target="#Rickpoint"><i
-                    class="fa-solid fa-circle-exclamation fa-shake" style="font-size: 60px;color: #ffe600;"
-                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
-                    data-bs-title="瑞克計量上升中"></i></button>
-        </div>
-    </div>
-
-
-    <!-- 右下角瑞克搖 -->
-    <div class="toast-container p-3 bottom-0 end-0" id="toastPlacement" data-original-class="toast-container p-3">
-        <div class="toast theroll" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <strong class="me-auto">RickRoll</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"
-                    onclick="StopToast();"></button>
-            </div>
-            <div class="toast-body">
-                <video class="toastRoll" width="320" height="120">
-                    <source src="vids/RickRoll.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </div>
-</body>
-<script>
-    const mdroll = document.getElementById('mdroll');
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    let roll = 0;
-    let rickPoint = 0;
-    if (sessionStorage.getItem("roll")) {
-        roll = sessionStorage.getItem("roll");
-        rickPoint = sessionStorage.getItem("rickPoint");
-    }
-
-    function whenLoad() {
-        RickToast();
-        progress();
-    }
-    function RickToast() {
-        let x = Math.random() * 100;
-        x = x.toFixed(0);
-        console.log(x);
-        if (x <= 3) {
-            $('.theroll').css('display', 'block');
-            $('.toastRoll').get(0).play();
-            roll++;
+    <style>
+        p {
+            font-size: 20px;
         }
-        setTimeout(() => {
-            if (roll == 0) {
-                RickToast();
-            }
-        }, 1000)
-    }
-    function progress() {
-        setTimeout(() => {
-            if (roll > 0) {
-                rickPoint += ((100 / 18650) * roll);
-            }
-            if (rickPoint >= 100) {
-                window.close();
-            }
-            $('.progress-bar').css('width', rickPoint + '%');
-            $('.progress-bar').attr('aria-valuenow', rickPoint);
-            $('.progress-bar').text(rickPoint.toFixed(0) + '%');
-            if (rickPoint.toFixed(0) == 70) {
-                $('.progress-bar').attr('class', 'progress-bar progress-bar-striped progress-bar-animated bg-warning');
-            }
-            if (rickPoint.toFixed(0) == 85) {
-                $('.progress-bar').attr('class', 'progress-bar progress-bar-striped progress-bar-animated bg-danger');
-            }
-            if (rickPoint.toFixed(0) >= 10 || roll > 0) {
-                $('.alert').css('display', 'block');
-            }
-            if (rickPoint.toFixed(0) == 50 || roll > 0) {
-                $('.alert').css('color', '#fe1616');
-            }
-            if (roll == 0 && rickPoint.toFixed(0) <= 50) {
-                $('.alert').css('display', 'none');
-            }
-            if (roll == 1 && rickPoint >= 50) {
-                let y = Math.random() * 10000;
-                y = y.toFixed(0);
-                if (y < 6) {
-                    $('#mdroll').modal('show');
-                    $('.modalroll').get(0).play();
-                    roll++;
-                }
-            }
-            sessionStorage.setItem("roll", roll);
-            sessionStorage.setItem("rickPoint", rickPoint);
-            console.log('go');
-            progress();
-        }, 10)
-    }
+    </style>
 
 
-    function StopToast() {
-        $('.theroll').css('display', 'none');
-        $('.toastRoll').get(0).pause();
-        roll--;
-        RickToast();
-    }
-
-
-
-
-    function Stopmdroll() {
-        roll--;
-        $('.modalroll').get(0).pause();
-    }
-    mdroll.addEventListener('hidden.bs.modal', event => {
-        Stopmdroll();
-    })
-</script>
 
 </html>
