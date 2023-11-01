@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/299aecfe82.js" crossorigin="anonymous"></script>
+    <script src="/scripts.js"></script> 
+    <title>美食-小小沖繩行</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">小小沖繩行</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/spots.html">景點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/foods.html">美食</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/goods.html">伴手禮</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="margin-top: 2%;">
+        <div class="row">
+            <h1 class="col-12" style="display: flex;justify-content: center;font-size: 64px;">伴手禮</h1>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <h2>第一個景點</h2>
+                <p>第一個景點的介紹介紹</p>
+            </div>
+            <img src="/imgs/banner01.jpg" alt="" class="col-5">
+        </div>
+        <div class="row">
+            <img src="/imgs/banner01.jpg" alt="" class="col-5">
+            <div class="col-7">
+                <h2>第二個景點</h2>
+                <p>第二個景點的介紹介紹</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- 快停止瑞克搖 -->
+    <div class="modal fade" id="mdroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1><i class="fa-solid fa-triangle-exclamation fa-beat" style="color: #ff0000;"></i>快停止瑞克搖<i
+                            class="fa-solid fa-arrow-trend-down"></i></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding:0;">
+                    <video class="modalroll" style="display: flex;justify-content: center; width: 100%">
+                        <source src="vids/RickRoll.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 瑞克劑量 -->
+    <div class="modal fade" id="Rickpoint" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>瑞克計量</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="rickPoint">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">0%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 瑞克劑量上升中 -->
+    <div class="toast-container p-3 top-50 end-0 translate-middle-y" id="toastPlacement"
+        data-original-class="toast-container p-3">
+        <div class="toast alert" style="width: fit-content;background: none;">
+            <button style="border: none;background: none;" data-bs-toggle="modal" data-bs-target="#Rickpoint"><i
+                    class="fa-solid fa-circle-exclamation fa-shake" style="font-size: 60px;color: #ffe600;"
+                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    data-bs-title="瑞克計量上升中"></i></button>
+        </div>
+    </div>
+
+
+    <!-- 右下角瑞克搖 -->
+    <div class="toast-container p-3 bottom-0 end-0" id="toastPlacement" data-original-class="toast-container p-3">
+        <div class="toast theroll" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">RickRoll</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"
+                    onclick="StopToast();"></button>
+            </div>
+            <div class="toast-body">
+                <video class="toastRoll" width="320" height="120">
+                    <source src="vids/RickRoll.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
