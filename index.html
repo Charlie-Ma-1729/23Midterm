@@ -19,9 +19,26 @@
     <script src="https://kit.fontawesome.com/299aecfe82.js" crossorigin="anonymous"></script>
     <title>小小沖繩行</title>
 </head>
+<style>
+    @keyframes box {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .container,
+    .banner {
+        animation-name: box;
+        animation-duration: 1s;
+    }
+</style>
 
 <body onload="whenLoad();">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">小小沖繩行</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -88,7 +105,99 @@
             </button>
         </div>
     </div>
+    <div class="container">
+        <div class="row row-cols-md-3" style="margin: 3% auto;">
+            <div class="col">
+                <div class="card">
+                    <img src="./imgs/spot01.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./imgs/spot01.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./imgs/spot01.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin: 3% auto;">
+            <div class="card bg-dark text-white">
+                <img src="./imgs/banner01.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+              </div>
+        </div>
+        <div class="row" style="margin: 3% auto;">
+            <div class="card bg-dark text-white">
+                <img src="./imgs/banner01.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+              </div>
+        </div>
+    </div>
 
+    <footer style="width: 100%; margin: 3% 0 0 0;">
+        <div class="row" style="background-color: rgb(46, 46, 46);margin: 0;">
+            <div class="col-3" style="color: white;padding: 2%;">
+                <h5>參考連結</h5>
+                <ul>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                </ul>
+            </div>
+            <div class="col-3" style="color: white;padding: 2%;">
+                <ul>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                </ul>
+            </div>
+            <div class="col-2" style="color: white;padding: 2%;">
+                <p>製作者:馬子翔</p>
+                <p>內容提供&企劃:賴元均</p>
+                <p>Copyright © 2023 Charlie Ma.</p>
+                <p>All rights reserved.</p>
+            </div>
+            <div class="col-4">
+                <iframe style="width: 100%;height: 100%;padding: 2%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7368025.960941955!2d117.04326673807677!3d25.615915409529713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34f57062eeab5be7%3A0x35bb617286fdd1ef!2z5pel5pys5rKW57mp57ij!5e0!3m2!1szh-TW!2stw!4v1698893592933!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
 
     <!-- 快停止瑞克搖 -->
     <div class="modal fade" id="mdroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -133,7 +242,7 @@
 
     <!-- 瑞克劑量上升中 -->
     <div class="toast-container p-3 top-50 end-0 translate-middle-y" id="toastPlacement"
-        data-original-class="toast-container p-3">
+        data-original-class="toast-container p-3" style="position: fixed;">
         <div class="toast alert" style="width: fit-content;background: none;">
             <button style="border: none;background: none;" data-bs-toggle="modal" data-bs-target="#Rickpoint"><i
                     class="fa-solid fa-circle-exclamation fa-shake" style="font-size: 60px;color: rgb(255, 230, 0);"
@@ -144,8 +253,8 @@
 
 
     <!-- 右下角瑞克搖 -->
-    <div class="toast-container p-3 bottom-0 end-0" id="toastPlacement" data-original-class="toast-container p-3">
-        <div class="toast theroll" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-container p-3 bottom-0 end-0" id="toastPlacement" data-original-class="toast-container p-3" style="position: fixed;">
+        <div class="toast theroll" role="alert" aria-live="assertive" aria-atomic="true"    >
             <div class="toast-header">
                 <strong class="me-auto">RickRoll</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"

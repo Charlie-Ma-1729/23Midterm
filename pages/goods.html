@@ -17,12 +17,28 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/299aecfe82.js" crossorigin="anonymous"></script>
-    <script src="/scripts.js"></script> 
-    <title>美食-小小沖繩行</title>
+    <script src="/scripts.js"></script>
+    <title>伴手禮-小小沖繩行</title>
 </head>
+<style>
+    @keyframes box {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .container {
+        animation-name: box;
+        animation-duration: 1s;
+    }
+</style>
 
 <body onload="whenLoad();">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">小小沖繩行</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -51,7 +67,8 @@
         <div class="row">
             <div class="col-7" style="padding: 2%;">
                 <h2>御果子御殿</h2>
-                <p>作為沖繩代表性的伴手禮店家，早在1979年6月就已創業，不過直到2015年2月12才更名為御果子御殿，除了位於讀谷的總店以外還有三間分店，分別位於名護、恩納和國際通，作為點心大廠，除了生產沖繩的特產──金楚糕以外，最有名的就是它的紅芋塔，它有名到什麼程度呢，紅玉塔每天是限量供應的，一旦售完就必須等到明天才行，所以你經常會看見一個畫面，就是在擺放著紅芋塔的位置空空如也，而其他的點心卻是依舊有著庫存，為此我還聽說過有人為了買到紅芋塔特地早起等它九點開店就進去買，而我總共去過位於名護和國際通的兩間店，和在讀谷的總部一樣，名護的那間店附有生產線，所以可以體驗手作DIY，你也可以透過玻璃櫥窗來觀察它的生產過程。</p>
+                <p>作為沖繩代表性的伴手禮店家，早在1979年6月就已創業，不過直到2015年2月12才更名為御果子御殿，除了位於讀谷的總店以外還有三間分店，分別位於名護、恩納和國際通，作為點心大廠，除了生產沖繩的特產──金楚糕以外，最有名的就是它的紅芋塔，它有名到什麼程度呢，紅玉塔每天是限量供應的，一旦售完就必須等到明天才行，所以你經常會看見一個畫面，就是在擺放著紅芋塔的位置空空如也，而其他的點心卻是依舊有著庫存，為此我還聽說過有人為了買到紅芋塔特地早起等它九點開店就進去買，而我總共去過位於名護和國際通的兩間店，和在讀谷的總部一樣，名護的那間店附有生產線，所以可以體驗手作DIY，你也可以透過玻璃櫥窗來觀察它的生產過程。
+                </p>
             </div>
             <img src="../imgs/banner01.jpg" alt="" class="col-5">
         </div>
@@ -65,7 +82,44 @@
         </div>
     </div>
 
-
+    <footer style="width: 100%; margin: 3% 0 0 0;">
+        <div class="row" style="background-color: rgb(46, 46, 46);margin: 0;">
+            <div class="col-3" style="color: white;padding: 2%;">
+                <h5>參考連結</h5>
+                <ul>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                </ul>
+            </div>
+            <div class="col-3" style="color: white;padding: 2%;">
+                <ul>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                    <li>google.com</li>
+                </ul>
+            </div>
+            <div class="col-2" style="color: white;padding: 2%;">
+                <p>製作者:馬子翔</p>
+                <p>內容提供&企劃:賴元均</p>
+                <p>Copyright © 2023 Charlie Ma.</p>
+                <p>All rights reserved.</p>
+            </div>
+            <div class="col-4">
+                <iframe style="width: 100%;height: 100%;padding: 2%;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7368025.960941955!2d117.04326673807677!3d25.615915409529713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34f57062eeab5be7%3A0x35bb617286fdd1ef!2z5pel5pys5rKW57mp57ij!5e0!3m2!1szh-TW!2stw!4v1698893592933!5m2!1szh-TW!2stw"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
