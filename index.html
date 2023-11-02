@@ -18,6 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/299aecfe82.js" crossorigin="anonymous"></script>
     <title>小小沖繩行</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <style>
     @keyframes box {
@@ -51,17 +52,17 @@
                         <a class="nav-link active" aria-current="page" href="./pages/spots.html">景點</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/foods.html">美食</a>
+                        <a class="nav-link active" href="./pages/foods.html">美食</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/goods.html">伴手禮</a>
+                        <a class="nav-link active" href="./pages/goods.html">伴手禮</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div id="banner">
-        <div id="carouselExampleCaptions" class="carousel slide">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -108,7 +109,7 @@
     <div class="container">
         <div class="row row-cols-md-3" style="margin: 3% auto;">
             <div class="col">
-                <div class="card">
+                <div class="card sc">
                     <img src="./imgs/spot01.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -119,7 +120,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card sc">
                     <img src="./imgs/spot01.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -130,7 +131,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card sc">
                     <img src="./imgs/spot01.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -204,7 +205,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1><i class="fa-solid fa-triangle-exclamation fa-beat" style="color: #ff0000;"></i>快停止瑞克搖<i
+                    <h1  style="color: black;"><i class="fa-solid fa-triangle-exclamation fa-beat" style="color: #ff0000;"></i>快停止瑞克搖<i
                             class="fa-solid fa-arrow-trend-down"></i></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -223,7 +224,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>瑞克計量</h2>
+                    <h2 style="color: black;">瑞克計量</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

@@ -1,0 +1,45 @@
+body{
+    background-image: linear-gradient(purple,black,black);
+}
+nav{
+    background-image: linear-gradient(black,purple);
+}
+
+.navbar-brand, .nav-link{
+    color: white !important;;
+    font-weight: 200 !important;
+}
+
+.navbar-brand:hover, .nav-link:hover{
+    color: white !important;
+    font-weight: 400 !important;
+    -webkit-text-stroke: 1px magenta !important;
+}
+
+h2,p,h1,hr{
+    color: white!important;
+}
+
+p{
+    color: white!important;
+}
+
+.bg-dark{
+    background: none!important;
+}
+
+.card-img-overlay{
+    background-color: rgba(0,0,0,0.6);
+}
+
+.sc{
+    background-color: black;
+}
+
+.card-title{
+    color: white;
+}
+
+.carousel-caption{
+    background-color: rgba(0,0,0,0.6);
+}
