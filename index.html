@@ -329,7 +329,7 @@
     function RickToast() {
         let x = Math.random() * 100;
         x = x.toFixed(0);
-        if (x <= 3) {
+        if (x <= 15) {
             $('.theroll').css('display', 'block');
             $('.toastRoll').get(0).play();
             roll++;
@@ -343,7 +343,7 @@
     function progress() {
         setTimeout(() => {
             if (roll > 0) {
-                rickPoint += ((100 / 18650) * roll);
+                rickPoint += ((300 / 18650) * roll);
             }
             if (rickPoint >= 100) {
                 window.location.replace("./pages/roll.html");
@@ -369,7 +369,7 @@
             if (roll == 1 && rickPoint >= 50) {
                 let y = Math.random() * 10000;
                 y = y.toFixed(0);
-                if (y < 6) {
+                if (y < 30) {
                     $('#mdroll').modal('show');
                     $('.modalroll').get(0).play();
                     roll++;
